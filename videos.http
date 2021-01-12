@@ -1,0 +1,24 @@
+### Get all videos
+GET http://localhost:3500/api/videos
+### Get video
+GET http://localhost:3500/api/video/1
+### Create video
+POST http://localhost:3500/api/videos
+Content-Type: application/json
+
+{
+    "title": "¿Qué es Serverless? | Presentación de Serverless",
+    "description": "¿Qué es Serverless? | Presentación de Serverless",
+    "link_video": "https://www.youtube.com/watch?v=-ci7EwXaIJg&t=1298s"
+}
+### Updating video
+PUT http://localhost:3500/api/video/1
+Content-Type: application/json
+
+{
+    "title": "Stack MERN, React & Axios, Peticion GET",
+    "description": "Stack MERN, React & Axios, Peticion GET",
+    "link_video": "https://www.youtube.com/watch?v=-LB0N_EO7X0"
+}
+### Deleting video
+DELETE http://localhost:3500/api/video/1
